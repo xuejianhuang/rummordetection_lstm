@@ -4,8 +4,8 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-import content_features_rnn.utils as utils
-import content_features_rnn.config as config
+import utils as utils
+import config as config
 
 
 
