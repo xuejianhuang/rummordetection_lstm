@@ -8,7 +8,7 @@ import gensim
 import pkuseg
 import numpy as np
 from gensim.models import KeyedVectors   #gensim用来加载预训练词向量
-import content_features_rnn.config as config
+import config as config
 
 
 
