@@ -2,17 +2,17 @@
 训练模型
 """
 import torch
-from content_features_rnn.lstm_model import LSTM_Model
-from content_features_rnn.dataset import RummorDataset
-import content_features_rnn.config as config
+from lstm_model import LSTM_Model
+from dataset import RummorDataset
+import config as config
 import torch.optim as optim
 from tqdm import tqdm
 import torch.nn.functional as F
 import numpy as np
 import matplotlib.pyplot as plt
-from content_features_rnn.dataset import  get_dataloader
+from dataset import  get_dataloader
 from torch.nn import CrossEntropyLoss
-from content_features_rnn.utils import  plot_learning_curve
+from utils import  plot_learning_curve
 device = config.device
 
 def train(epoch,model,loss_fn,optimizer,train_dataloader):
