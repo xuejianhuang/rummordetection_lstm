@@ -1,8 +1,8 @@
 import torch
-import content_features_rnn.utils as utils
+import utils as utils
 from torch.utils.data import  Dataset,DataLoader
 from sklearn.model_selection import train_test_split
-import content_features_rnn.config as config
+import config as config
 class RummorDataset(Dataset):
 
     def __init__(self,model="train"):
