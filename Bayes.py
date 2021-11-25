@@ -2,7 +2,7 @@ import sklearn
 from sklearn.model_selection import  train_test_split
 from sklearn.feature_extraction.text import  CountVectorizer,TfidfVectorizer
 from sklearn.naive_bayes import  MultinomialNB
-import content_features_rnn.utils as utils
+import utils as utils
 
 def text_feature(words,vectorizer="CountVectorizer",max_features=4000):
     if vectorizer=="CountVectorizer":
