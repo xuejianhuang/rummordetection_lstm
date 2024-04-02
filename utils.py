@@ -71,6 +71,8 @@ def drop_stopwords(contents,stopwords):
 
 
 def get_word2vec():
+    if os.path.exists("./embeddings/sgns.weibo.bigram") == False:
+        bz2Decompress()
     word2vec=KeyedVectors.load_word2vec_format('./embeddings/sgns.weibo.bigram',binary=False,unicode_errors="ignore")
     return word2vec
 
