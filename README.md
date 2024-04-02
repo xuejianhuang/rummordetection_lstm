@@ -32,4 +32,6 @@
 # 实验结果
   * Bayes:测试集准确率87%左右
   * LSTM:训练集96%，测试集87%，存在过拟合，需要做相关参数调整，留个大家自己尝试
+# 可能出现的问题
+  * python3.9安装pkuseg可能会出错，可以安装spacy_pkuseg，import spacy_pkuseg as pkuseg
    
